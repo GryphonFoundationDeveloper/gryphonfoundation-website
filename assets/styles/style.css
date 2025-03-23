@@ -95,6 +95,40 @@ a {
     .logo {
         margin-bottom: 20px;
     }
+
+    .imageAndText {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #mainImage {
+        width: 80% !important;
+        height: auto;
+        padding-bottom: 5%;
+    }
+
+    #mainBlock {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #left-content {
+        width: 100% !important;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    #right-chart {
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: auto;
+        padding: 5%;
+    }
 }
 
 /* Footer styling */
@@ -131,23 +165,34 @@ footer img:hover {
 #mainBlock {
     padding-top: 5%;
     padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    max-width: 100%;
 }
 
 #right-chart {
+    flex: 1;
     width: 50%;
+}
+
+#right-chart img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80%;
 }
 
 #left-content {
     width: 50%;
-    height: auto;
+    flex: 1;
+    margin-right: 5%;
 }
 
 #mainSubHeader {
     text-align: center;
     padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 0.95em;
 }
 
@@ -186,6 +231,7 @@ mark {
     margin-right: 5em;
 }
 
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +243,8 @@ mark {
 .video-container {
     flex: 1;
     max-width: 100%;
-    margin-left: 5em;
+    height: 100%;
+    margin-left: 5%;
 }
 
 .text-container {
@@ -208,11 +255,12 @@ mark {
     margin-right: 5em;
 }
 
-.video iframe {
+.video-container iframe {
     width: 100%;
-    height: 100%;
-    max-width: 560px;
-    max-height: 315px;
+    max-width: 100%;
+    height: auto;
+    width: 560px;
+    height: 315px;
 }
 
 @media (max-width: 768px) {
@@ -220,11 +268,20 @@ mark {
         flex-direction: column;
     }
     .video-container {
-        margin-left: 0;
-        padding-left: 0;
-        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
     }
-
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 100%;
+    }
 }
 
 .AwarenessContent {
@@ -239,6 +296,10 @@ mark {
     padding-right: 5%;
     padding-top: 3%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    
 }
 
 @font-face {
