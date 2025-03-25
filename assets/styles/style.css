@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+li > ol {
+    padding-left:25px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -185,13 +189,13 @@ footer img:hover {
 #right-chart img {
     max-width: 100%;
     height: auto;
-    max-height: 80%;
+    padding-right: 5%;
 }
 
 #left-content {
     width: 50%;
     flex: 1;
-    margin-right: 5%;
+    margin-right: 5%
 }
 
 #mainSubHeader {
@@ -227,7 +231,7 @@ mark {
     color: black;
 }
 
-/* Awareness Page */
+/* Assistive Tech Page */
 
 #accessIntro {
     text-align: center;
@@ -295,7 +299,7 @@ mark {
     padding-left: 2em; /* Add some space between the video and text */
 }
 
-/* Projects Page */
+/* Research Page */
 
 #projectHeaders {
     padding-left: 5%;
