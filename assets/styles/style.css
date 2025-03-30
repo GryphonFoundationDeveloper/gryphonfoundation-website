@@ -95,7 +95,7 @@ h2 {
     }
 }
 
-/* Media Query for Mobile / Small Screens */
+/* Media Query for Mobile / Small Screen */
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column; 
@@ -160,11 +160,10 @@ footer img {
 }
 
 footer img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 /* Home */
-
 #mainHeader {
     text-align: center;
     padding-top: 1em;
@@ -231,7 +230,47 @@ mark {
     color: black;
 }
 
+/* Organization Page */
+.row {
+    text-align: center;
+    padding-bottom: 2em;
+    display: inline-block;
+}
+
+.row2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.col {
+    float: left;
+    width: 33.3%;
+    padding: 1em;
+}
+
+.col2 {
+    float: left;
+    width: 50%;
+}
+
+.role {
+    color: rgb(173, 173, 173);
+}
+
+.teamMember {
+    padding: 2rem;
+}
+
+
+@media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      display: block;
+    }
+}
 /* Assistive Tech Page */
+
+/* Slideshow Gallery */
 
 #accessIntro {
     text-align: center;
@@ -240,7 +279,6 @@ mark {
     margin-left: 5em;
     margin-right: 5em;
 }
-
 
 .container {
     display: flex;
