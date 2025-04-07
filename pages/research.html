@@ -20,7 +20,22 @@
     </nav>
     <script src="script.js"></script>
 
-    <h1>[iChair foto gallery]</h1>
+    <h1 style="text-align: center; padding-top: 1em;">iChair foto gallery</h1>
+    <div class="slideshow">
+        <div class="slide">
+            <div class="numberLabel">1/20</div>
+            <img src="../assets/images/gallery/20230110_114902.jpg" width="600px">
+            <div class="slideCaption">test</div>
+        </div>
+ 
+        <div class="slide">
+            <div class="numberLabel">2/20</div>
+            <img src="../assets/images/gallery/20230110_115222.jpg" width="600px">
+            <div class="slideCaption"></div>
+        </div>
+        <a class="left" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="right" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 
     <div id="accessIntro">
         <h1>Welcome to ACCESS Reports</h1>
@@ -68,5 +83,7 @@
             </a>
         </p>
     </footer>
+
+    <script src="../assets/scripts/script.js"></script>
 </body>
 </html>
