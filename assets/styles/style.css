@@ -163,70 +163,7 @@ footer img:hover {
     transform: scale(1.1);
 }
 
-/* Home */
-
-/*
-#mainHeader {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 0.25em;
-    font-size: 3em;
-}
-
-#mainBlock {
-    padding-top: 5%;
-    padding-left: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 100%;
-}
-
-#right-chart {
-    flex: 1;
-    width: 50%;
-}
-
-#right-chart img {
-    max-width: 100%;
-    height: auto;
-    padding-right: 5%;
-}
-
-#left-content {
-    width: 50%;
-    flex: 1;
-    margin-right: 5%
-}
-
-#mainSubHeader {
-    text-align: center;
-    padding-bottom: 2em;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 0.95em;
-}
-
-#mainImage {
-    width: 40%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.imageAndText {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.content {
-    padding-left: 20px;
-} */
-
+/* Landing Page */
 #shieldContainer {
     text-align: center;
     display: flex;
@@ -254,6 +191,14 @@ footer img:hover {
 mark {
     background-color: #ebed49;
     color: black;
+}
+
+@media screen and (max-width: 650px) {
+    #homeShield img {
+        width: 300px;
+        padding-top: 4em;
+        height: auto;
+    }
 }
 
 /* Links Page */
@@ -303,8 +248,10 @@ mark {
 
 .row2 {
     text-align: center;
-    padding-bottom: 2em;
-    padding: 5%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 20px;
 }
 
 .col {
@@ -314,16 +261,23 @@ mark {
 }
 
 .col2 {
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 50%;
 }
 
 .role {
     color: rgb(173, 173, 173);
+    padding-bottom: 10px;
 }
 
 .teamMember {
     padding: 5%;
+}
+
+.teamMember img {
+    border-radius: 50%;
 }
 
 
@@ -331,6 +285,16 @@ mark {
     .col {
       width: 100%;
       display: block;
+    }
+
+    .col2 {
+        width: 100%;
+        display: block;
+    }
+
+    .row2 {
+        padding-bottom: 2em;
+        display: block;
     }
 }
 /* Assistive Tech Page */
