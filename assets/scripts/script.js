@@ -9,6 +9,10 @@ function changeSlide(x) {
 
 function showSlide(i) {
     let slides = document.getElementsByClassName("slide");
+    // hide the previous slide (was either the one behind or the one in front)
+    if (slides[slideNum - 2]) slides[slideNum - 2].style.display = "none";
+    if (slides[slideNum]) slides[slideNum].style.display = "none"; 
+    
     if (i > slides.length) {
         slideNum = 1;
     }
@@ -16,7 +20,4 @@ function showSlide(i) {
         slideNum = slides.length;
     }
     slides[slideNum - 1].style.display = "block";
-    // hide the previous slide (was either the one behind or the one in front)
-    if (slides[slideNum - 2]) slides[slideNum - 2].style.display = "none";
-    if (slides[slideNum]) slides[slideNum].style.display = "none"; 
 }
