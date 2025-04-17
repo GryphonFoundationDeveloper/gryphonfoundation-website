@@ -433,7 +433,37 @@ mark {
     padding-left: 2em;
 }
 
-/* Research Page */
+/* Education Page */
+
+#educationHeader{
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+
+#papersHeader {
+    text-align: center;
+}
+
+#papers {
+    padding: 4em;
+}
+
+#educationHeader2{
+    text-align: center;
+    color: gray;
+    padding-bottom: 1em;
+}
+
+.booksContainer {
+    justify-content: flex;
+}
+
+.book {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
+}
 
 #projectHeaders {
     padding-left: 5%;
