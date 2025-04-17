@@ -237,6 +237,16 @@ mark {
 }
 
 /* Organization Page */
+
+#missionStatement {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color:#e1e1e1;
+}
+
 .row {
     text-align: center;
     padding-bottom: 2em;
@@ -463,6 +473,10 @@ mark {
     padding-left: 4em;
     padding-right: 4em;
     padding-bottom: 4em;
+}
+
+.bookLink {
+    color:#E0E0E0;
 }
 
 #projectHeaders {
