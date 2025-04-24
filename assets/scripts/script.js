@@ -1,10 +1,15 @@
 /* Programming for slideshow on Research page */
 
 let slideNum = 1;
+let slideInterval;
+
 showSlide(slideNum);
 
+
 function changeSlide(x) {
+    clearInterval(slideInterval);
     showSlide(slideNum += x);
+    startSlideInterval();
 }
 
 function showSlide(i) {
@@ -21,3 +26,9 @@ function showSlide(i) {
     }
     slides[slideNum - 1].style.display = "block";
 }
+
+function startSlideInterval() {
+    slideInterval = setInterval(function() {showSlide(slideNum += 1);}, 2500);
+}
+
+startSlideInterval();
