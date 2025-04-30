@@ -95,6 +95,9 @@ h2 {
     }
 }
 
+#mainBlock {
+    padding-left: 5em;
+}
 /* Media Query for Mobile / Small Screen */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -451,6 +454,17 @@ mark {
     padding-bottom: 0.25em;
 }
 
+#opportunity {
+    color: #E0E0E0;
+    font-size: 1.5em;
+    padding: 3em;
+}
+
+.opportunityContainer {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
 #papersHeader {
     text-align: center;
 }
@@ -487,7 +501,12 @@ mark {
 }
 
 @media screen and (max-width: 768px) {
-    
+    #opportunity {
+        color: #E0E0E0;
+        font-size: 1.5em;
+        padding: 2em;
+    }
+
 }
 
 @font-face {
