@@ -509,6 +509,15 @@ mark {
 
 }
 
+/* Outreach Page */
+
+#contact {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('/Users/dianaalvarado/Desktop/GW/assets/fonts/InterVariable-Italic.ttf') format('truetype'), 
