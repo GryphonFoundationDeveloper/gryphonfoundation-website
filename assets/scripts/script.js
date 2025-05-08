@@ -32,3 +32,17 @@ function startSlideInterval() {
 }
 
 startSlideInterval();
+
+/* Expandable Member Bios */
+
+function toggleText() {
+    var extraText = document.querySelector(".extra-text");
+    var button = document.querySelector(".expand-btn");
+    if (extraText.style.display === "none") {
+        extraText.style.display = "block";
+        button.textContent = "Collapse";
+    } else {
+        extraText.style.display = "none";
+        button.textContent = "Expand";
+    }
+}

@@ -241,6 +241,10 @@ mark {
 
 /* Organization Page */
 
+.extra-text {
+    display: none;
+}
+
 #missionStatement {
     font-size: 1.5em;
     text-align: center;
@@ -514,6 +518,12 @@ mark {
 #contact {
     font-size: 2em;
     padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+#donate {
+    font-size: 2em;
     padding-bottom: 2em;
     text-align: center;
 }
