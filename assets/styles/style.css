@@ -521,6 +521,13 @@ mark {
 
 /* Outreach Page */
 
+#milcLink {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
 #contact {
     font-size: 2em;
     padding-top: 1em;
