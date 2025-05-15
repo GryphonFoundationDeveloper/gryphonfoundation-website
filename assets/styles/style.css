@@ -460,13 +460,19 @@ mark {
 
 #opportunity {
     color: #E0E0E0;
-    font-size: 1.5em;
     padding: 3em;
+    padding-right: 0;
+}
+
+#appLink {
+    color: #E0E0E0;
+    padding-left: none;
 }
 
 .opportunityContainer {
     padding-top: 1em;
     padding-bottom: 2em;
+    font-size: 1.5em;
 }
 
 #papersHeader {
