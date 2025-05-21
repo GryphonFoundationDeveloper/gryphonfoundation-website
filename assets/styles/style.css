@@ -183,8 +183,13 @@ footer img:hover {
 
 #homeInstructions {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     color: rgb(218, 218, 218);
+}
+
+#homeText {
+    text-align: center;
+    padding-top: 5%;
 }
 
 #homeShield img:hover {
@@ -521,11 +526,15 @@ mark {
 
 /* Outreach Page */
 
-#milcLink {
+.milcLink {
     font-size: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
+}
+
+.milcLink a {
+    color: #E0E0E0;
 }
 
 #contact {
