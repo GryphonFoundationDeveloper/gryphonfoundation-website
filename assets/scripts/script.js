@@ -1,3 +1,17 @@
+/* Expandable Member Bios */
+
+function toggleText() {
+    var extraText = document.querySelector(".expandable-content");
+    var button = document.querySelector(".expandable-button");
+    extraText.classList.toggle("expanded");
+    if (extraText.classList.contains("expanded")) {
+        button.textContent = "Click to collapse";
+    }
+    else {
+        button.textContent = "Click to expand";
+    }
+}
+
 /* Programming for slideshow on Research page */
 
 let slideNum = 1;
@@ -32,17 +46,3 @@ function startSlideInterval() {
 }
 
 startSlideInterval();
-
-/* Expandable Member Bios */
-
-function toggleText() {
-    var extraText = document.querySelector(".extra-text");
-    var button = document.querySelector(".expand-btn");
-    if (extraText.style.display === "none") {
-        extraText.style.display = "block";
-        button.textContent = "Collapse";
-    } else {
-        extraText.style.display = "none";
-        button.textContent = "Expand";
-    }
-}

@@ -256,6 +256,18 @@ mark {
     display: none;
 }
 
+.expandable-content {
+    display: none;
+}
+
+.expandable-content.expanded {
+    display: block;
+}
+
+.expandable-button {
+    font-family: "Audiowide";
+}
+
 #missionStatement {
     font-size: 1.5em;
     text-align: center;
