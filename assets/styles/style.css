@@ -342,6 +342,11 @@ mark {
         display: block;
     }
 
+    .col1 {
+        width: 100%;
+        display: block;
+    }
+
     .row2 {
         padding-bottom: 2em;
         display: block;
@@ -455,15 +460,22 @@ mark {
 }
 
 @media (max-width: 768px) {
+
     .container {
         flex-direction: column;
     }
+
+    .text-container {
+        padding-left: 10%;
+    }
+
     .video-container {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 56.25%;
     }
+
     .video-container iframe {
         position: absolute;
         top: 0;
@@ -554,9 +566,16 @@ mark {
 @media screen and (max-width: 768px) {
     #opportunity {
         color: #E0E0E0;
-        font-size: 1.5em;
-        padding: 2em;
+        font-size: 1.5em; 
+        padding-left: 0;
     }
+
+    .opportunityContainer {
+        font-size: 1em;
+        padding: 4em;
+    }
+
+
 
 }
 
@@ -576,12 +595,6 @@ mark {
 #contact {
     font-size: 2em;
     padding-top: 1em;
-    padding-bottom: 2em;
-    text-align: center;
-}
-
-#donate {
-    font-size: 2em;
     padding-bottom: 2em;
     text-align: center;
 }
