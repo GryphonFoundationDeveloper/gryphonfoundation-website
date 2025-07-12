@@ -87,7 +87,7 @@ h2 {
 /* Media Query for Larger Screens */
 @media screen and (min-width: 768px) {
     .navbar {
-        flex-direction: row;  /* horizontal on large screens */
+        flex-direction: row;
     }
 
     .nav-links {
@@ -104,6 +104,7 @@ h2 {
 #mainBlock {
     padding-left: 5em;
 }
+
 /* Media Query for Mobile / Small Screen */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -566,17 +567,14 @@ mark {
 @media screen and (max-width: 768px) {
     #opportunity {
         color: #E0E0E0;
-        font-size: 1.5em; 
+        font-size: 1.2em; 
         padding-left: 0;
     }
 
     .opportunityContainer {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 4em;
     }
-
-
-
 }
 
 /* Outreach Page */
@@ -598,11 +596,3 @@ mark {
     padding-bottom: 2em;
     text-align: center;
 }
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/Users/dianaalvarado/Desktop/GW/assets/fonts/InterVariable-Italic.ttf') format('truetype'), 
-         url('/Users/dianaalvarado/Desktop/GW/assets/fonts/InterVariable.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
