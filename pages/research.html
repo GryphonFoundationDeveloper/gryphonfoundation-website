@@ -1,25 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistive Technology</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Innovation | Gryphon Foundation</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <style>
+    .research-hero{max-width:1100px;margin:2.5rem auto 1.5rem;padding:0 1.25rem;text-align:center}
+    .research-hero h1{font-size:clamp(2rem,5vw,3.25rem);margin-bottom:.5rem}
+    .research-hero p{max-width:780px;margin:.5rem auto 1.5rem;line-height:1.7}
+    .research-grid{max-width:1100px;margin:2rem auto 3rem;padding:0 1.25rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .research-card{display:flex;flex-direction:column;border:1px solid #d9dee7;border-radius:14px;overflow:hidden;background:#fff;color:inherit;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.06);transition:transform .18s,box-shadow .18s}
+    .research-card:hover{transform:translateY(-3px);box-shadow:0 9px 24px rgba(0,0,0,.12)}
+    .research-card .card-number{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#526477;font-weight:700;padding:1rem 1rem 0}
+    .research-card h2{font-size:1.25rem;margin:.35rem 1rem}
+    .research-card p{line-height:1.55;margin:0 1rem 1rem;color:#44515e}
+    .research-card .card-link{margin:auto 1rem 1rem;font-weight:700;color:#155ca8}
+    .research-note{max-width:1000px;margin:0 auto 2.5rem;padding:1.25rem 1.5rem;border-left:4px solid #2876b9;background:#f2f6fa;line-height:1.7}
+    .section-heading{text-align:center;margin:2.5rem 1rem 1rem}
+    .section-intro{text-align:center;max-width:820px;margin:0 auto 1.5rem;padding:0 1.25rem;line-height:1.7}
+    .slideshow{max-width:900px;margin:1.5rem auto}
+    .container{max-width:1050px;margin:2rem auto;padding:0 1rem;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+    .container .video-container{flex:1 1 480px}
+    .container .text-container{flex:1 1 240px}
+    .container iframe{width:100%;aspect-ratio:16/9;height:auto}
+    .app-link-row{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap;margin:1rem}
+    .app-link{display:inline-block;padding:.75rem 1.1rem;border-radius:8px;background:#174f7d;color:white;text-decoration:none;font-weight:700}
+    @media(max-width:650px){.research-note{margin-left:1rem;margin-right:1rem}.container{display:block}.container .text-container{text-align:center}}
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/images/Gryphon.png"></a>
-        </div>
+  <nav class="navbar">
+    <div class="logo"><a href="../index.html"><img src="../assets/images/Gryphon.png" alt="Gryphon Foundation"></a></div>
     <ul class="nav-links">
-        <li><a href="../pages/organization.html">Foundation</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="../pages/education.html">Education</a></li>
-        <li><a href="../pages/outreach.html">Outreach</a></li>
+      <li><a href="../pages/organization.html">Foundation</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="../pages/education.html">Education</a></li>
+      <li><a href="../pages/outreach.html">Outreach</a></li>
     </ul>
-    </nav>
-    <script src="script.js"></script>
+  </nav>
 
+  <header class="research-hero">
+    <h1>Research &amp; Innovation</h1>
+    <p>Gryphon Foundation's work has grown from assistive technology engineering into documenting accessibility and developing digital tools for participation, connection, and research.</p>
+  </header>
+
+  <section class="research-grid" aria-label="Research areas">
+    <a class="research-card" href="#aichair">
+      <div class="card-number">01 · Historical development</div>
+      <h2>aiChair Development</h2>
+      <p>Explore the historical development of Gryphon's intelligent power wheelchair and assistive technology work.</p>
+      <span class="card-link">Explore the history ↓</span>
+    </a>
+    <a class="research-card" href="#access-documentary">
+      <div class="card-number">02 · Video documentary</div>
+      <h2>ACCESS Reports</h2>
+      <p>Video documentation intended to help viewers experience public places from the perspective of a power wheelchair user.</p>
+      <span class="card-link">Watch the documentary ↓</span>
+    </a>
+    <a class="research-card" href="access-report.html">
+      <div class="card-number">03 · iPad application</div>
+      <h2>Access Report Application</h2>
+      <p>A structured field-research tool for documenting accessibility through predefined categories, ratings, photographs, location data, and reports.</p>
+      <span class="card-link">Explore the application →</span>
+    </a>
+    <a class="research-card" href="dating-research.html">
+      <div class="card-number">04 · iPad application</div>
+      <h2>Dating Research</h2>
+      <p>A location-aware relationship research application shaped by the importance of accessible, comfortable places to meet.</p>
+      <span class="card-link">Explore the application →</span>
+    </a>
+  </section>
+
+  <div class="research-note">
+    <strong>How the work connects:</strong> The aiChair work established a long-running focus on assistive technology. ACCESS Reports brought lived experience of accessibility into public view. The Access Report application extended that work into structured, location-based assessments. Dating Research grew from a related insight: the places where people meet can affect whether social connection is accessible and comfortable.
+  </div>
+
+  <section id="aichair">
+    <h2 class="section-heading">01 — aiChair Development</h2>
+    <p class="section-intro">A historical record of Gryphon's intelligent power wheelchair development, including early Gryphon Shield upgrade kits, engineering prototypes, demonstrations, and later aiChair work.</p>
     <h1 style="text-align: center; padding-top: 1em;">aiChair Development</h1>
     <div class="slideshow">
         <div class="slide">
@@ -116,6 +175,12 @@
         <a class="right" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
+
+  </section>
+
+  <section id="access-documentary">
+    <h2 class="section-heading">02 — ACCESS Reports: Video Documentary</h2>
+    <p class="section-intro">ACCESS Reports are intended to give viewers an opportunity to experience the world from the perspective of a power wheelchair user. New reports can be viewed on the <a href="https://youtube.com/@accessreports?si=U01xdq4LzIyubTOg" target="_blank" rel="noopener">ACCESS Reports YouTube channel</a>.</p>
     <div id="accessIntro">
         <h1>Welcome to ACCESS Reports</h1>
         <p><br></p>
@@ -142,12 +207,13 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Gryphon Foundation for People with Disadvantages - All Rights Reserved.</p>
-        <br><p>501(c)(3) Nonprofit Organization</p>
-        <br>
-    </footer>
 
-    <script src="../assets/scripts/script.js"></script>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gryphon Foundation for People with Disadvantages - All Rights Reserved.</p>
+    <p>501(c)(3) Nonprofit Organization</p>
+  </footer>
+  <script src="../assets/scripts/script.js"></script>
 </body>
 </html>

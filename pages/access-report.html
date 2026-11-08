@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Report Application | Gryphon Foundation</title>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <style>
+    .app-page{max-width:1080px;margin:2rem auto;padding:0 1.25rem;color:#202b35}
+    .app-hero{display:grid;grid-template-columns:160px 1fr;gap:1.5rem;align-items:center;padding:1.5rem;background:#f3f7fa;border-radius:16px}
+    .app-icon{width:140px;height:140px;object-fit:cover;border-radius:24px;box-shadow:0 5px 18px rgba(0,0,0,.14)}
+    .app-hero h1{font-size:clamp(2rem,5vw,3rem);margin:.1rem 0 .6rem}
+    .eyebrow{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#38617e}
+    .lead{font-size:1.08rem;line-height:1.7}
+    .status{display:inline-block;padding:.35rem .65rem;border-radius:20px;background:#e7eef5;color:#244c69;font-size:.85rem;font-weight:700}
+    .app-section{margin:2.5rem 0}
+    .app-section h2{font-size:1.65rem;margin-bottom:.65rem}
+    .app-section p,.app-section li{line-height:1.7}
+    .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+    .feature{border:1px solid #dce3e9;border-radius:12px;padding:1rem;background:#fff}
+    .feature h3{margin:.1rem 0 .4rem;font-size:1.08rem}
+    .feature p{margin:0;color:#4b5965}
+    .screen-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-top:1rem}
+    .screen{margin:0;border:1px solid #dce3e9;border-radius:12px;overflow:hidden;background:#fff}
+    .screen img{display:block;width:100%;height:auto;background:#f4f4f4}
+    .screen figcaption{padding:.7rem .8rem;font-size:.92rem;line-height:1.45}
+    .note{padding:1rem 1.2rem;border-left:4px solid #2876b9;background:#f2f6fa;border-radius:0 8px 8px 0;line-height:1.65}
+    .back-link{display:inline-block;margin:1.5rem 0;color:#155ca8;font-weight:700}
+    @media(max-width:620px){.app-hero{grid-template-columns:1fr;text-align:center}.app-icon{margin:auto}}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="../index.html"><img src="../assets/images/Gryphon.png" alt="Gryphon Foundation"></a></div>
+    <ul class="nav-links">
+      <li><a href="../pages/organization.html">Foundation</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="../pages/education.html">Education</a></li>
+      <li><a href="../pages/outreach.html">Outreach</a></li>
+    </ul>
+  </nav>
+
+  <main class="app-page">
+    <a class="back-link" href="research.html">← Back to Research</a>
+    <header class="app-hero">
+      <img class="app-icon" src="../assets/images/research-apps/access-report-icon.png" alt="Access Report application icon">
+      <div>
+        <div class="eyebrow">Gryphon Foundation · iPad application</div>
+        <h1>Access Report</h1>
+        <p class="lead">A structured field-research application for documenting accessibility at real-world locations through predefined assessment categories, ratings, observations, photographs, geographic information, and generated reports.</p>
+        <span class="status">Developed · Not yet published</span>
+      </div>
+    </header>
+
+    <section class="app-section">
+      <h2>From lived experience to structured field research</h2>
+      <p>The Access Report application grew from Gryphon Foundation's broader work in assistive technology and accessibility. It provides a way to record what a researcher encounters at a location, preserve supporting evidence, and organize findings into a report. The application is distinct from the ACCESS Reports video documentary series.</p>
+      <p>Its documented methodology uses six assessment categories: Parking, Entrance, Customer Service, Seating, Bathrooms, and Views. Each category has predefined questions and rating criteria. The five-point scale describes the accessibility experience; it is not a legal-compliance certification.</p>
+    </section>
+
+    <section class="app-section">
+      <h2>How an assessment works</h2>
+      <div class="feature-grid">
+        <article class="feature"><h3>1. Create a report</h3><p>Start a location-specific record with an automatically assigned report identifier, location, reporter, date, status, and notes.</p></article>
+        <article class="feature"><h3>2. Assess six categories</h3><p>Use the predefined questions and rating criteria to document different aspects of the visitor experience.</p></article>
+        <article class="feature"><h3>3. Capture evidence</h3><p>Attach photographs and written observations to support the assessment.</p></article>
+        <article class="feature"><h3>4. Record improvements</h3><p>Document recommendations that may help make a location more accessible.</p></article>
+        <article class="feature"><h3>5. Map and revisit</h3><p>Use geographic information and interactive location pins to open an assessment, begin work, or preview what remains to be assessed.</p></article>
+        <article class="feature"><h3>6. Generate a report</h3><p>Preview and generate a PDF report that brings together the overall rating, category results, location details, observations, photographs, and recommendations.</p></article>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <h2>Application screens</h2>
+      <p>These are screenshots of the developed iPad application.</p>
+      <div class="screen-grid">
+        <figure class="screen"><img src="../assets/images/research-apps/access-report-dashboard.png" alt="Access Report dashboard"><figcaption>Dashboard and assessment activity.</figcaption></figure>
+        <figure class="screen"><img src="../assets/images/research-apps/access-report-new-report.png" alt="New Access Report form"><figcaption>Create a report for a specific location.</figcaption></figure>
+        <figure class="screen"><img src="../assets/images/research-apps/access-report-history.png" alt="Access Report history"><figcaption>Search and review saved reports.</figcaption></figure>
+        <figure class="screen"><img src="../assets/images/research-apps/access-report-assessment.png" alt="Access Report assessment screen"><figcaption>Detailed category assessments and evidence.</figcaption></figure>
+        <figure class="screen"><img src="../assets/images/research-apps/access-report-map.png" alt="Access Report map"><figcaption>Interactive map for locating and continuing assessments.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <h2>Research methodology and sample report</h2>
+      <p>The ACCESS Report Scientific Field Research Manual documents the assessment protocol, category structure, rating scale, evidence practices, and field workflow. A completed Amtrak Station Fairhaven assessment illustrates how category ratings, observations, photographs, location information, and recommendations are assembled into a nine-page PDF report.</p>
+      <div class="note"><strong>Development status:</strong> The iPad assessment application and its demonstrated mapping and report-generation workflows have been developed. A centralized research database, the improvement-funding program, and the accessibility-recognition program are works in progress and are not presented here as operational services.</div>
+    </section>
+
+    <section class="app-section">
+      <h2>How this work led to Dating Research</h2>
+      <p>While developing Access Report, Gryphon Foundation recognized that location is also central to social participation. For a person who uses a wheelchair, the accessibility of a meeting place can determine whether a first date is practical. Other people may prefer quiet, familiar, or less stimulating environments.</p>
+      <p>That insight helped inspire Dating Research: a separate application exploring location-aware discovery, individual meeting preferences, and the development of relationships. The two applications have distinct purposes, but share an interest in how people experience and participate in real-world places.</p>
+      <p><a href="dating-research.html">Explore Dating Research →</a></p>
+    </section>
+    <a class="back-link" href="research.html">← Return to Research</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gryphon Foundation for People with Disadvantages - All Rights Reserved.</p>
+    <p>501(c)(3) Nonprofit Organization</p>
+  </footer>
+</body>
+</html>
