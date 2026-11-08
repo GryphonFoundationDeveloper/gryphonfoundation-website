@@ -15,7 +15,12 @@
     .research-card .card-number{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#526477;font-weight:700;padding:1rem 1rem 0}
     .research-card h2{font-size:1.25rem;margin:.35rem 1rem}
     .research-card p{line-height:1.55;margin:0 1rem 1rem;color:#44515e}
-    .research-card .card-link{margin:auto 1rem 1rem;font-weight:700;color:#155ca8}
+    .research-card .card-link{display:inline-flex;align-items:center;justify-content:space-between;gap:.65rem;margin:auto 1rem 1rem;padding:.72rem .9rem;border-radius:10px;background:#eaf3fb;color:#14558f;font-weight:750;text-decoration:none;transition:background .18s,color .18s,transform .18s}
+    .research-card .card-link .cta-icon{width:1.15rem;height:1.15rem;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .research-card:hover .card-link,.research-card:focus-visible .card-link{background:#155f9e;color:#fff}
+    .research-card:focus-visible{outline:3px solid #72b7f0;outline-offset:4px}
+    .research-card .card-link .cta-arrow{font-size:1.15rem;line-height:1;transition:transform .18s}
+    .research-card:hover .card-link .cta-arrow{transform:translateX(3px)}
     .research-note{color:#202b35;max-width:1000px;margin:0 auto 2.5rem;padding:1.25rem 1.5rem;border-left:4px solid #2876b9;background:#f2f6fa;line-height:1.7}
     .section-heading{text-align:center;color:#f8fafc;margin:2.5rem 1rem 1rem}
     .section-intro{text-align:center;color:#e2e8f0;max-width:820px;margin:0 auto 1.5rem;padding:0 1.25rem;line-height:1.7}
@@ -50,25 +55,25 @@
       <div class="card-number">01 · Historical development</div>
       <h2>aiChair Development</h2>
       <p>Explore the historical development of Gryphon's intelligent power wheelchair and assistive technology work.</p>
-      <span class="card-link">Explore the history ↓</span>
+      <span class="card-link">Explore the history <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.64-6.36"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg></span>
     </a>
     <a class="research-card" href="#access-documentary">
       <div class="card-number">02 · Video documentary</div>
       <h2>ACCESS Reports</h2>
       <p>Video documentation intended to help viewers experience public places from the perspective of a power wheelchair user.</p>
-      <span class="card-link">Watch the documentary ↓</span>
+      <span class="card-link">Watch the documentary <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/></svg></span>
     </a>
     <a class="research-card" href="access-report.html">
       <div class="card-number">03 · iPad application</div>
       <h2>Access Report Application</h2>
       <p>A structured field-research tool for documenting accessibility through predefined categories, ratings, photographs, location data, and reports.</p>
-      <span class="card-link">Explore the application →</span>
+      <span class="card-link">Explore the application <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg><span class="cta-arrow" aria-hidden="true">→</span></span>
     </a>
     <a class="research-card" href="dating-research.html">
       <div class="card-number">04 · iPad application</div>
       <h2>Dating Research</h2>
       <p>A location-aware relationship research application shaped by the importance of accessible, comfortable places to meet.</p>
-      <span class="card-link">Explore the application →</span>
+      <span class="card-link">Explore the application <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.6c0 5.2-8.8 10.1-8.8 10.1S3.2 13.8 3.2 8.6A4.6 4.6 0 0 1 12 6.3a4.6 4.6 0 0 1 8.8 2.3Z"/></svg><span class="cta-arrow" aria-hidden="true">→</span></span>
     </a>
   </section>
 
